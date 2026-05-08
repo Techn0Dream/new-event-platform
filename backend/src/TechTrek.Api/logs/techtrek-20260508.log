@@ -1,0 +1,908 @@
+2026-05-08 10:44:56.542 +05:30 [INF] TechTrek API starting...
+2026-05-08 10:44:56.663 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 10:44:56.705 +05:30 [FTL] TechTrek API failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 279
+2026-05-08 10:47:37.300 +05:30 [INF] TechTrek API starting...
+2026-05-08 10:47:37.417 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 10:47:37.727 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 10:47:37.728 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 10:47:37.728 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 10:47:37.730 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 10:47:37.837 +05:30 [FTL] TechTrek API failed to start.
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:5432
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.UnpooledDataSource.Get(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.ExistsAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.GetAppliedMigrationsAsync(CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator.MigrateAsync(String targetMigration, CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 286
+2026-05-08 11:02:54.612 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:02:54.729 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:02:55.033 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:02:55.034 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:02:55.034 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:02:55.036 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 11:02:55.135 +05:30 [FTL] TechTrek API failed to start.
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:5432
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.UnpooledDataSource.Get(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.ExistsAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.GetAppliedMigrationsAsync(CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator.MigrateAsync(String targetMigration, CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 286
+2026-05-08 11:05:09.473 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:05:09.648 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:05:09.690 +05:30 [FTL] TechTrek API failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 279
+2026-05-08 11:05:48.708 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:05:48.826 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:05:49.151 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:05:49.152 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:05:49.152 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:05:49.155 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 11:05:49.417 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_488aafe0b5b84d5baa77d2c61f4ae38e
+2026-05-08 11:05:49.467 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_fa45a8d18337487c85be0f3bb7466baa
+2026-05-08 11:05:49.469 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_51484e5efe2043058c80f0923fbbe0f6
+2026-05-08 11:05:49.469 +05:30 [INF] TechTrek API configured. Starting...
+2026-05-08 11:05:49.479 +05:30 [INF] User profile is available. Using '/Users/yogya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-08 11:05:49.482 +05:30 [INF] Connected to Redis.
+2026-05-08 11:05:49.482 +05:30 [INF] Connected to Redis.
+2026-05-08 11:05:49.482 +05:30 [INF] Connected to Redis.
+2026-05-08 11:05:49.504 +05:30 [INF] OutboxDispatcher started.
+2026-05-08 11:05:49.570 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:49.572 +05:30 [INF] Now listening on: http://localhost:5283
+2026-05-08 11:05:49.576 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-08 11:05:49.576 +05:30 [INF] Hosting environment: Development
+2026-05-08 11:05:49.576 +05:30 [INF] Content root path: /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api
+2026-05-08 11:05:50.616 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:51.627 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:52.636 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:53.644 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:54.667 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:55.675 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:56.682 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:57.691 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:58.702 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:05:59.711 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:00.719 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:01.726 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:02.736 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:03.750 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:04.759 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:05.767 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:06.774 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:07.779 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:08.791 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:09.796 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:10.811 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:11.817 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:12.824 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:13.830 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:14.836 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:15.841 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:16.848 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:17.854 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:18.863 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:19.874 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:20.891 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:21.895 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:22.897 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:06:23.900 +05:30 [ERR] OutboxDispatcher encountered an error.
+System.InvalidOperationException: The LINQ expression 'DbSet<OutboxMessage>()
+    .Where(o => !(o.IsProcessed) && o.RetryCount < 3)' could not be translated. Additional information: Translation of member 'IsProcessed' on entity type 'OutboxMessage' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TechTrek.Persistence.Repositories.OutboxRepository.GetPendingAsync(Int32 batchSize, CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Persistence/Repositories/Repositories.cs:line 354
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ProcessPendingMessagesAsync(CancellationToken ct) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 72
+   at TechTrek.Infrastructure.BackgroundServices.OutboxDispatcher.ExecuteAsync(CancellationToken stoppingToken) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Infrastructure/BackgroundServices/OutboxDispatcher.cs:line 50
+2026-05-08 11:07:28.126 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:07:28.281 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:07:28.321 +05:30 [FTL] TechTrek API failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 279
+2026-05-08 11:09:21.875 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:09:22.022 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:09:22.323 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:09:22.324 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:09:22.324 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:09:22.327 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 11:09:22.640 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_03b877068f284be4af306d33889b735c
+2026-05-08 11:09:22.692 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_e7de9520112f4b67baf70754e2bb7bae
+2026-05-08 11:09:22.693 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_e86c2662fa8445e28d11f85107c1fa7a
+2026-05-08 11:09:22.694 +05:30 [INF] TechTrek API configured. Starting...
+2026-05-08 11:09:22.701 +05:30 [INF] User profile is available. Using '/Users/yogya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-08 11:09:22.703 +05:30 [INF] Connected to Redis.
+2026-05-08 11:09:22.703 +05:30 [INF] Connected to Redis.
+2026-05-08 11:09:22.703 +05:30 [INF] Connected to Redis.
+2026-05-08 11:09:22.728 +05:30 [INF] OutboxDispatcher started.
+2026-05-08 11:09:22.795 +05:30 [INF] Now listening on: http://localhost:5283
+2026-05-08 11:09:22.796 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-08 11:09:22.796 +05:30 [INF] Hosting environment: Development
+2026-05-08 11:09:22.796 +05:30 [INF] Content root path: /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api
+2026-05-08 11:10:15.260 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5283/api/v1/Auth/login - application/json 41
+2026-05-08 11:10:15.316 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-08 11:10:15.336 +05:30 [INF] Executing endpoint 'TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api)'
+2026-05-08 11:10:15.351 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TechTrek.Api.Controllers.V1.LoginRequest, System.Threading.CancellationToken) on controller TechTrek.Api.Controllers.V1.AuthController (TechTrek.Api).
+2026-05-08 11:10:15.386 +05:30 [INF] Executing action method TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api) - Validation state: "Valid"
+2026-05-08 11:10:15.390 +05:30 [INF] [CQRS] Handling LoginCommand
+2026-05-08 11:10:15.555 +05:30 [INF] [CQRS] Completed LoginCommand in 165.703ms
+2026-05-08 11:10:15.558 +05:30 [INF] Executed action method TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 170.4177ms.
+2026-05-08 11:10:15.563 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'TechTrek.Shared.Common.ApiResponse`1[[TechTrek.Application.Auth.Commands.LoginResult, TechTrek.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-08 11:10:15.588 +05:30 [INF] Executed action TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api) in 234.6792ms
+2026-05-08 11:10:15.588 +05:30 [INF] Executed endpoint 'TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api)'
+2026-05-08 11:10:15.590 +05:30 [INF] HTTP POST /api/v1/Auth/login responded 400 in 292.8031 ms
+2026-05-08 11:10:15.593 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5283/api/v1/Auth/login - 400 null application/json; charset=utf-8 334.0309ms
+2026-05-08 11:10:44.511 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:10:44.625 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:10:44.920 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:10:44.921 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:10:44.921 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:10:44.924 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 11:10:45.227 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_f958f33238d14633a63332466c5d7659
+2026-05-08 11:10:45.277 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_e38f61e77a7d41f987ba9c3a32eb853e
+2026-05-08 11:10:45.278 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_0510dcc250994e2b9025fd9ab1eadbfa
+2026-05-08 11:10:45.279 +05:30 [INF] TechTrek API configured. Starting...
+2026-05-08 11:10:45.286 +05:30 [INF] User profile is available. Using '/Users/yogya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-08 11:10:45.288 +05:30 [INF] Connected to Redis.
+2026-05-08 11:10:45.288 +05:30 [INF] Connected to Redis.
+2026-05-08 11:10:45.288 +05:30 [INF] Connected to Redis.
+2026-05-08 11:10:45.312 +05:30 [INF] OutboxDispatcher started.
+2026-05-08 11:10:45.381 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5283: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-08 11:10:45.399 +05:30 [FTL] TechTrek API failed to start.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5283: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>g__LogAndRethrow|15_3(<>c__DisplayClass15_0&)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Program.<Main>$(String[] args) in /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api/Program.cs:line 317
+2026-05-08 11:11:57.384 +05:30 [INF] TechTrek API starting...
+2026-05-08 11:11:57.496 +05:30 [INF] SignalR Redis backplane configured.
+2026-05-08 11:11:57.794 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'StageProgress'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:11:57.795 +05:30 [WRN] Entity 'Team' has a global query filter defined and is the required end of a relationship with the entity 'TeamMember'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:11:57.795 +05:30 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-08 11:11:57.798 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 11:11:58.050 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_5c614d8de3db412ca10df59915f0275f
+2026-05-08 11:11:58.099 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_af84419fde0f49169b82cc454f1ba8ef
+2026-05-08 11:11:58.100 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: Yogyas-MacBook-Air_490b0b942667465384d6b71de853c44e
+2026-05-08 11:11:58.101 +05:30 [INF] TechTrek API configured. Starting...
+2026-05-08 11:11:58.108 +05:30 [INF] User profile is available. Using '/Users/yogya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-08 11:11:58.111 +05:30 [INF] Connected to Redis.
+2026-05-08 11:11:58.111 +05:30 [INF] Connected to Redis.
+2026-05-08 11:11:58.111 +05:30 [INF] Connected to Redis.
+2026-05-08 11:11:58.177 +05:30 [INF] OutboxDispatcher started.
+2026-05-08 11:11:58.246 +05:30 [INF] Now listening on: http://localhost:5283
+2026-05-08 11:11:58.247 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-08 11:11:58.247 +05:30 [INF] Hosting environment: Development
+2026-05-08 11:11:58.247 +05:30 [INF] Content root path: /Users/yogya/Documents/New-event-platform/backend/src/TechTrek.Api
+2026-05-08 11:12:46.429 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5283/api/v1/Auth/login - application/json 41
+2026-05-08 11:12:46.482 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-08 11:12:46.497 +05:30 [INF] Executing endpoint 'TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api)'
+2026-05-08 11:12:46.512 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TechTrek.Api.Controllers.V1.LoginRequest, System.Threading.CancellationToken) on controller TechTrek.Api.Controllers.V1.AuthController (TechTrek.Api).
+2026-05-08 11:12:46.545 +05:30 [INF] Executing action method TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api) - Validation state: "Valid"
+2026-05-08 11:12:46.550 +05:30 [INF] [CQRS] Handling LoginCommand
+2026-05-08 11:12:46.711 +05:30 [INF] [CQRS] Completed LoginCommand in 161.493ms
+2026-05-08 11:12:46.714 +05:30 [INF] Executed action method TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 166.9004ms.
+2026-05-08 11:12:46.719 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'TechTrek.Shared.Common.ApiResponse`1[[TechTrek.Application.Auth.Commands.LoginResult, TechTrek.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-08 11:12:46.744 +05:30 [INF] Executed action TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api) in 230.8672ms
+2026-05-08 11:12:46.744 +05:30 [INF] Executed endpoint 'TechTrek.Api.Controllers.V1.AuthController.Login (TechTrek.Api)'
+2026-05-08 11:12:46.746 +05:30 [INF] HTTP POST /api/v1/Auth/login responded 400 in 282.4017 ms
+2026-05-08 11:12:46.749 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5283/api/v1/Auth/login - 400 null application/json; charset=utf-8 321.211ms
+2026-05-08 11:21:06.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/index.html - null null
+2026-05-08 11:21:06.979 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 30.3158 ms
+2026-05-08 11:21:06.979 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/index.html - 200 null text/html;charset=utf-8 47.3542ms
+2026-05-08 11:21:08.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui.css - null null
+2026-05-08 11:21:08.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-08 11:21:08.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui-bundle.js - null null
+2026-05-08 11:21:08.138 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-08 11:21:08.139 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 21.6731 ms
+2026-05-08 11:21:08.138 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-08 11:21:08.139 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 22.0821 ms
+2026-05-08 11:21:08.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 23.9626ms
+2026-05-08 11:21:08.139 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-08 11:21:08.139 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 22.5141 ms
+2026-05-08 11:21:08.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 24.6377ms
+2026-05-08 11:21:08.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/swagger-ui.css - 200 144929 text/css 23.8467ms
+2026-05-08 11:21:08.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/v1/swagger.json - null null
+2026-05-08 11:21:08.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/favicon-16x16.png - null null
+2026-05-08 11:21:08.455 +05:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2026-05-08 11:21:08.456 +05:30 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.8840 ms
+2026-05-08 11:21:08.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/favicon-16x16.png - 200 665 image/png 3.2671ms
+2026-05-08 11:21:08.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5283/swagger/favicon-32x32.png - null null
+2026-05-08 11:21:08.466 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-08 11:21:08.466 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.8374 ms
+2026-05-08 11:21:08.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/favicon-32x32.png - 200 628 image/png 14.2777ms
+2026-05-08 11:21:08.556 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 103.5280 ms
+2026-05-08 11:21:08.556 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5283/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.7921ms
